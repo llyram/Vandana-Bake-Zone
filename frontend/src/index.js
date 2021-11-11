@@ -1,7 +1,7 @@
-import "./styles.css";
-
 var header = document.getElementsByTagName("header")[0];
 var footer = document.getElementsByTagName("footer")[0];
+
+console.log("this is getting imported");
 
 header.innerHTML = `
 <div style="display:flex;">
@@ -44,7 +44,3 @@ footer.innerHTML = `
     </div>
   </div>
 </div>`;
-
-var poweredBy = document.getElementsByClassName("wa-chat-box-poweredby");
-
-poweredBy.innerHTML = "";

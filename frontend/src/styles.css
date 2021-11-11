@@ -304,3 +304,8 @@ textarea {
 .logo {
   margin-bottom: 50px;
 }
+
+
+iframe {
+  border-radius: 20px;
+}
