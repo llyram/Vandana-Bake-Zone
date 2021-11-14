@@ -44,3 +44,38 @@ footer.innerHTML = `
     </div>
   </div>
 </div>`;
+
+var menu;
+
+const getMenu = async () => {
+  try {
+    const response = await fetch("/getmenu");
+    const jsonData = await response.json();
+    console.log(jsonData);
+    show(jsonData);
+  } catch (err) {
+    console.log(err.message);
+  }
+};
+
+getMenu();
+
+const show = (jsonData) => {
+  // console.log(jsonData);
+  let list = `<tr>
+  <th>Name</th>
+  <th>1/2 Kg</th>
+  <th>1 Kg</th>
+ </tr>`;
+  for (let r of jsonData) {
+    list += `<tr> 
+    <td>${r.name} </td>
+    <td>${r.half}</td>
+    <td>${r.one}</td>     
+</tr>`;
+  }
+
+  document.getElementById("basic-menu").innerHTML = list;
+};
+
+// console.log(menu);
