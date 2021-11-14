@@ -58,6 +58,12 @@ header::after {
 .menu-wrapper h1 {
   font-size: 50px;
   margin-bottom: 0;
+  margin-top: 50px;
+}
+
+.menu-wrapper h2 {
+  margin-bottom: 0;
+  margin-top: 50px;
 }
 
 .menu-items {
@@ -183,6 +189,7 @@ header::after {
   transition: top ease 0.5s;
   width: 200px;
   box-shadow: 2px 2px 2px 2px #3c0c00;
+  border-radius: 10px;
 
   display: flex;
   flex-direction: column;
@@ -198,6 +205,7 @@ header::after {
   height: 200px;
   width: 200px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 footer {
@@ -314,5 +322,9 @@ iframe {
 th, td {
   padding-left: 20px;
   padding-right: 20px;
+  font-size: 30px;
+}
+
+#special-cakes li {
   font-size: 30px;
 }
