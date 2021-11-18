@@ -24,7 +24,7 @@ header::after {
   height: 12px;
   bottom: -11px;
   left: 0;
-  /* background-image: url("src/images/header-zigzag.png"); */
+  background-image: url("src/images/zigzag.png");
   background-size: contain;
 }
 
@@ -195,6 +195,7 @@ header::after {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
+  background-color: #3c0c00;
 }
 
 .card:hover {
@@ -326,5 +327,22 @@ th, td {
 }
 
 #special-cakes li {
+  font-size: 30px;
+}
+
+#address {
+  justify-content: left;
+}
+
+#address h1 {
+  margin-bottom: 0;
+}
+
+#address hr {
+  margin: 20px;
+}
+
+#address p{
+  margin: 5px;
   font-size: 30px;
 }

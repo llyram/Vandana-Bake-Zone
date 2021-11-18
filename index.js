@@ -17,9 +17,7 @@ app.get("/getmenu", async (req, res) => {
     const menu = await pool.query(
       "SELECT * FROM menu"
     );
-    console.log(menu.rows);
     res.json(menu.rows);
-    // res.json(mock_return);
   } catch (err) {
     console.log(err.message);
   }
