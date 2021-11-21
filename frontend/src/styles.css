@@ -195,7 +195,8 @@ header::after {
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  background-color: #3c0c00;
+  background-color: white;
+  color: #3c0c00;
 }
 
 .card:hover {
